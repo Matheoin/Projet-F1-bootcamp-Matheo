@@ -18,8 +18,9 @@ public class Classement {
     //    1 -> 25, 2 -> 18, ..., 10 -> 1. Au-delà de la 10e place : 0.
     //    Un abandon vaut la position 0, donc 0 point.
     public static int pointsPourPosition(int position) {
-        // À COMPLÉTER
-        return 0;
+        // À COMPLÉTER;
+        if (position > 10 || position == 0) return 0;
+        return BAREME[position -1];
     }
 
     // 2. classementPilotes(lignes) : un Resultat par pilote, avec ses points,
